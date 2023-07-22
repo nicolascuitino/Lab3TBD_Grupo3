@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.stereotype.Repository;
 
+import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -51,8 +52,11 @@ public class EmergenciaRepositoryImp implements  EmergenciaRepository{
                                 .append("localField", "_id")
                                 .append("foreignField", "id_emergencia")
                                 .append("as", "tareas")),
+                new Document("$unwind",
+                        new Document("path", "$tareas")),
                 new Document("$match",
-                        new Document("tareas.id_estado", 0L))));
+                        new Document("tareas.id_estado", 1L))));
+
 
         Iterator iterator = result.iterator();
         ArrayList<Document> documents = new ArrayList();
