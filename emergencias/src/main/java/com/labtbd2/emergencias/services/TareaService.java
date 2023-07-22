@@ -1,8 +1,6 @@
 package com.labtbd2.emergencias.services;
 
-import com.labtbd2.emergencias.models.emergencia;
-import com.labtbd2.emergencias.models.tarea;
-import com.labtbd2.emergencias.repositories.EmergenciaRepository;
+import com.labtbd2.emergencias.models.Tarea;
 import com.labtbd2.emergencias.repositories.TareaRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,14 +20,24 @@ public class TareaService {
     }
 
     @GetMapping("/tarea")
-    public List<tarea> getTareas(){
+    public List<Tarea> getTareas(){
         return tareaRepository.getTareas();
     }
 
     @PostMapping("/tarea")
     @ResponseBody
-    public tarea crearTarea(@RequestBody tarea t){
-        tarea result = tareaRepository.crearTarea(t);
+    public Tarea crearTarea(@RequestBody Tarea t){
+        Tarea result = tareaRepository.crearTarea(t);
         return result;
+    }
+
+    @PutMapping("/tarea")
+    public Tarea actualizarTarea(@RequestBody Tarea t){
+        return tareaRepository.updateTarea(t);
+    }
+
+    @DeleteMapping("/tarea")
+    public void eliminarTareas(){
+        tareaRepository.deleteAllTarea();
     }
 }

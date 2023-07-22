@@ -2,7 +2,7 @@ package com.labtbd2.emergencias.models;
 
 import org.springframework.data.annotation.Id;
 
-public class tarea {
+public class Tarea {
     @Id
     Integer id;
     String nombre;
@@ -12,10 +12,10 @@ public class tarea {
     Integer id_emergencia;
     Integer id_estado;
 
-    public tarea() {
+    public Tarea() {
     }
 
-    public tarea(Integer id, String nombre, String descripcion, Integer cantidad_requeridos, Integer cantidad_inscritos, Integer id_emergencia, Integer id_estado) {
+    public Tarea(Integer id, String nombre, String descripcion, Integer cantidad_requeridos, Integer cantidad_inscritos, Integer id_emergencia, Integer id_estado) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;

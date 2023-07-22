@@ -1,16 +1,13 @@
 package com.labtbd2.emergencias.repositories;
 
-import com.labtbd2.emergencias.models.emergencia;
-import com.labtbd2.emergencias.models.tarea;
+import com.labtbd2.emergencias.models.Emergencia;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.stereotype.Repository;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -29,15 +26,15 @@ public class EmergenciaRepositoryImp implements  EmergenciaRepository{
     }
 
     @Override
-    public List<emergencia> getEmergencias() {
-        MongoCollection<emergencia> collection = database.getCollection("emergencia", emergencia.class);
-        List <emergencia> emergencias = collection.find().into(new ArrayList<>());
+    public List<Emergencia> getEmergencias() {
+        MongoCollection<Emergencia> collection = database.getCollection("emergencia", Emergencia.class);
+        List <Emergencia> emergencias = collection.find().into(new ArrayList<>());
         return emergencias;
     }
 
     @Override
-    public emergencia crearEmergencia(emergencia em) {
-        MongoCollection<emergencia> collection = database.getCollection("emergencia", emergencia.class);
+    public Emergencia crearEmergencia(Emergencia em) {
+        MongoCollection<Emergencia> collection = database.getCollection("emergencia", Emergencia.class);
         collection.insertOne(em);
         return em;
     }

@@ -1,8 +1,7 @@
 package com.labtbd2.emergencias.services;
 
-import com.labtbd2.emergencias.models.emergencia;
+import com.labtbd2.emergencias.models.Emergencia;
 import com.labtbd2.emergencias.repositories.EmergenciaRepository;
-import com.mongodb.client.AggregateIterable;
 import org.bson.Document;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,14 +22,14 @@ public class EmergenciaService {
     }
 
     @GetMapping("/emergencia")
-    public List<emergencia> getEmergencias(){
+    public List<Emergencia> getEmergencias(){
         return emergenciaRepository.getEmergencias();
     }
 
     @PostMapping("/emergencia")
     @ResponseBody
-    public emergencia crearEmergencia(@RequestBody emergencia em){
-        emergencia result = emergenciaRepository.crearEmergencia(em);
+    public Emergencia crearEmergencia(@RequestBody Emergencia em){
+        Emergencia result = emergenciaRepository.crearEmergencia(em);
         return result;
     }
 

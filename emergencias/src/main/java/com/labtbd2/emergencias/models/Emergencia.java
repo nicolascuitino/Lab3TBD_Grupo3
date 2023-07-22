@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 
 import java.util.Date;
 
-public class emergencia {
+public class Emergencia {
     @Id
     Integer id;
     String nombre;
@@ -12,7 +12,7 @@ public class emergencia {
     Date fecha_inicio;
     Date fecha_termino;
 
-    public emergencia(Integer id, String nombre, String descripcion, Date fecha_inicio, Date fecha_termino) {
+    public Emergencia(Integer id, String nombre, String descripcion, Date fecha_inicio, Date fecha_termino) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -20,7 +20,7 @@ public class emergencia {
         this.fecha_termino = fecha_termino;
     }
 
-    public emergencia() {
+    public Emergencia() {
     }
 
     public Integer getId() {
