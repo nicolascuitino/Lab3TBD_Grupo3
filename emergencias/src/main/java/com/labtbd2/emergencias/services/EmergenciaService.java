@@ -1,6 +1,7 @@
 package com.labtbd2.emergencias.services;
 
 import com.labtbd2.emergencias.models.Emergencia;
+import com.labtbd2.emergencias.models.Tarea;
 import com.labtbd2.emergencias.repositories.EmergenciaRepository;
 import org.bson.Document;
 import org.springframework.web.bind.annotation.*;
@@ -39,5 +40,15 @@ public class EmergenciaService {
         ArrayList<Document> result = emergenciaRepository.getTareasActivas(id);
 
         return result;
+    }
+
+    @PutMapping("/emergencia")
+    public Emergencia actualizarEmergencia(@RequestBody Emergencia e){
+        return emergenciaRepository.updateEmergencia(e);
+    }
+
+    @DeleteMapping("/emergencia")
+    public void eliminarEmergencias(){
+        emergenciaRepository.deleteAllEmergencia();
     }
 }
