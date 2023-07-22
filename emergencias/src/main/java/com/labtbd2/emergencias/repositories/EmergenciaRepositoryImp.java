@@ -54,7 +54,7 @@ public class EmergenciaRepositoryImp implements  EmergenciaRepository{
         ));
         Iterator iterator = result.iterator();
         ArrayList<Document> documents = new ArrayList();
-        // Then iterate over the iterator
+        // Ahora iteramos
         while (iterator.hasNext()) {
             documents.add((Document) iterator.next());
         }
