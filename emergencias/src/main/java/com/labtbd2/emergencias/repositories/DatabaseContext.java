@@ -26,7 +26,7 @@ public class DatabaseContext {
 
         //Cliente de base de datos
         MongoClient mongoClient =  MongoClients.create();
-        MongoDatabase database = mongoClient.getDatabase("mongodb").withCodecRegistry(pojoCodecRegistry);
+        MongoDatabase database = mongoClient.getDatabase("tbdlab3grupo3").withCodecRegistry(pojoCodecRegistry);
         return database;
     }
 }
