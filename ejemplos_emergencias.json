@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "Terremoto",
+        "descripcion": "Terremoto de gran magnitud en la region metropolitana",
+        "fecha_inicio": "2023-07-10T08:00:00Z",
+        "fecha_termino": "2023-07-20T15:30:00Z"
+    },
+    {
+        "id": 2,
+        "nombre": "Inundación",
+        "descripcion": "Inundación por desbordamiento de río en la ciudad de XYZ",
+        "fecha_inicio": "2023-09-05T12:00:00Z",
+        "fecha_termino": "2023-09-10T18:00:00Z"
+    },
+    {
+        "id": 3,
+        "nombre": "Incendio forestal",
+        "descripcion": "Incendio forestal afectando áreas naturales protegidas en ABC",
+        "fecha_inicio": "2023-08-15T14:30:00Z",
+        "fecha_termino": "2023-08-25T10:00:00Z"
+    },
+    {
+        "id": 4,
+        "nombre": "Huracán",
+        "descripcion": "Huracán de categoría 3 impactando la costa este de DEF",
+        "fecha_inicio": "2023-10-01T06:00:00Z",
+        "fecha_termino": "2023-10-05T22:00:00Z"
+    },
+    {
+        "id": 5,
+        "nombre": "Epidemia",
+        "descripcion": "Brote de enfermedad contagiosa en la región GHI",
+        "fecha_inicio": "2023-11-12T09:45:00Z",
+        "fecha_termino": "2023-11-30T16:15:00Z"
+    },
+    {
+        "id": 6,
+        "nombre": "Derrame tóxico",
+        "descripcion": "Derrame tóxico en la industria química de JKL, afectando el medio ambiente",
+        "fecha_inicio": "2023-12-03T11:00:00Z",
+        "fecha_termino": "2023-12-08T17:30:00Z"
+    },
+    {
+        "id": 7,
+        "nombre": "Tornado",
+        "descripcion": "Tornado causando daños en la ciudad de MNO",
+        "fecha_inicio": "2024-01-20T13:15:00Z",
+        "fecha_termino": "2024-01-21T08:00:00Z"
+    },
+    {
+        "id": 8,
+        "nombre": "Deslizamiento de tierra",
+        "descripcion": "Deslizamiento de tierra bloqueando carreteras en PQR",
+        "fecha_inicio": "2024-02-07T16:30:00Z",
+        "fecha_termino": "2024-02-12T12:00:00Z"
+    },
+    {
+        "id": 10,
+        "nombre": "Sequía",
+        "descripcion": "Sequía prolongada afectando la agricultura en la zona de VWX",
+        "fecha_inicio": "2024-04-22T09:00:00Z",
+        "fecha_termino": "2024-05-30T14:30:00Z"
+    },
+    {
+        "id": 11,
+        "nombre": "Tormenta de nieve",
+        "descripcion": "Fuerte tormenta de nieve paralizando YZ",
+        "fecha_inicio": "2024-06-05T10:30:00Z",
+        "fecha_termino": "2024-06-07T18:00:00Z"
+    }
+]

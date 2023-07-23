@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Recoger escombros",
+    "descripcion": "Se debe recoger escombros de los edificios destruidos",
+    "cantidad_requeridos": 5,
+    "cantidad_inscritos": 3,
+    "id_emergencia": 1,
+    "id_estado": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Evacuar áreas afectadas",
+    "descripcion": "Evacuar a los residentes de las áreas afectadas por la inundación",
+    "cantidad_requeridos": 10,
+    "cantidad_inscritos": 7,
+    "id_emergencia": 2,
+    "id_estado": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Controlar el fuego",
+    "descripcion": "Controlar el incendio forestal para evitar su propagación",
+    "cantidad_requeridos": 15,
+    "cantidad_inscritos": 12,
+    "id_emergencia": 3,
+    "id_estado": 2
+  },
+  {
+    "id": 4,
+    "nombre": "Reparar infraestructura dañada",
+    "descripcion": "Reparar las estructuras dañadas por el huracán",
+    "cantidad_requeridos": 20,
+    "cantidad_inscritos": 18,
+    "id_emergencia": 4,
+    "id_estado": 2
+  },
+  {
+    "id": 5,
+    "nombre": "Administrar medicamentos",
+    "descripcion": "Administrar medicamentos a los afectados por la epidemia",
+    "cantidad_requeridos": 30,
+    "cantidad_inscritos": 25,
+    "id_emergencia": 5,
+    "id_estado": 1
+  },
+  {
+    "id": 6,
+    "nombre": "Limpieza del derrame tóxico",
+    "descripcion": "Realizar limpieza en el área afectada por el derrame tóxico",
+    "cantidad_requeridos": 8,
+    "cantidad_inscritos": 6,
+    "id_emergencia": 6,
+    "id_estado": 3
+  },
+  {
+    "id": 7,
+    "nombre": "Asistencia médica",
+    "descripcion": "Brindar asistencia médica a las personas afectadas por el tornado",
+    "cantidad_requeridos": 12,
+    "cantidad_inscritos": 10,
+    "id_emergencia": 7,
+    "id_estado": 1
+  },
+  {
+    "id": 8,
+    "nombre": "Despejar carreteras",
+    "descripcion": "Despejar carreteras bloqueadas por el deslizamiento de tierra",
+    "cantidad_requeridos": 6,
+    "cantidad_inscritos": 4,
+    "id_emergencia": 8,
+    "id_estado": 2
+  },
+  {
+    "id": 9,
+    "nombre": "Distribuir agua y alimentos",
+    "descripcion": "Distribuir agua y alimentos a la población afectada por la sequía",
+    "cantidad_requeridos": 40,
+    "cantidad_inscritos": 35,
+    "id_emergencia": 10,
+    "id_estado": 1
+  },
+  {
+    "id": 10,
+    "nombre": "Rescate en áreas nevadas",
+    "descripcion": "Realizar rescates en áreas afectadas por la tormenta de nieve",
+    "cantidad_requeridos": 18,
+    "cantidad_inscritos": 15,
+    "id_emergencia": 11,
+    "id_estado": 1
+  }
+]
